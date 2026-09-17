@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #0f536e;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 83, 110, 1) 0%,
+    rgba(38, 99, 222, 1) 71%
+  );
+}
+
+.App {
+  min-height: 100vh;
+  padding: 32px 20px;
+}
+
+.content-wrapper {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.content-wrapper h1 {
+  margin: 0 0 24px;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.button-row > .ant-col {
+  padding-inline: 6px;
+}
+
+.button-row > .ant-col:first-child {
+  padding-left: 0;
+}
+
+.button-row > .ant-col:last-child {
+  padding-right: 0;
+}
+
+.todo-table {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.todo-table .ant-table,
+.todo-table .ant-table-container,
+.todo-table .ant-table-thead > tr > th,
+.todo-table .ant-table-tbody > tr > td {
+  background: #f5f5f5;
+}
+
+.todo-table .ant-table-thead > tr > th > td {
+  color: #111827;
+  border: none;
+}
+
+.row-actions {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.row-action-button {
+  width: 32px !important;
+  min-height: 32px !important;
+  padding: 4px !important;
+}
+
+.edit-form {
+  display: grid;
+  gap: 12px;
+}
+
+.edit-form label {
+  display: grid;
+  gap: 4px;
+  color: #374151;
+  font-weight: 600;
+}
